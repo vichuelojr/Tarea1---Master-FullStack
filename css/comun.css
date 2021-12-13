@@ -1,0 +1,107 @@
+/* Importo las letras de Google Fonts que quiero utilizar */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* Este archivo de CSS común es para quitar herencias no deseadas y dar estilo al header, nav, footer y al contenedor
+de la pagina. Comunes a todas las páginas del sitio web */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    border: 1px solid #04293A;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    font-size: larger;
+    font-weight: 600;
+    text-shadow: 3px 2px 1px #7d4100;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #064663;
+    color: #c4c4ce;
+    opacity: 0.9;
+}
+nav a{
+    color: white;
+}
+nav a:hover{
+    color: #ffaf00;
+}
+
+.menu{
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#logobtc{
+    display: inline-flex;
+    position: relative;
+    top: 15px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    }
+nav img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    align-items: center;
+}
+nav img:hover{
+    opacity: 0.8;
+    transform: rotate(10deg);
+}
+
+footer{
+    background-color: #041C32;
+    color:#c4c4ce;
+    height: 120px;
+    padding: 20px;
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a{
+    color:#c4c4ce;
+}
+footer ul li{
+    margin-top:8px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+.redes li{
+    margin-right: 15px;
+}
+
+
+
+
