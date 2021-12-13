@@ -11,19 +11,71 @@ de la pagina. Comunes a todas las páginas del sitio web */
     list-style: none;
     font-family: 'Raleway', sans-serif;
 }
-
-
 #contenedor {
     display: flex;
     flex-direction: column;
 }
-header{
+header {
     width: 100%;
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
+    height: 150px;
     justify-content: center;
+    background-image: linear-gradient(180deg, #041C32, #04293A);
+    color: whitesmoke;
+}
+header h1{
+    font-size: 80px;
+    position: absolute;
+    margin: 15px;
+    left: 100px;
+    text-shadow: -3px 2px 2px #ECB365;
+    letter-spacing: 4px;
+}
+header h2{
+    font-size: 15px;
+    position: absolute;
+    margin: 50px;
+    left: 70px;
+    top: 60px;
+}
+header div{
+    position: absolute;
+    left: 465px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+    margin: 10px;
+    filter: brightness(110%);
+}
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
     align-items: center;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 10px;
+    top: 65px;
+    left: 675px;
+}
+.logoredes{
+    display: inline-flex;
+    position: relative;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+}
+.logoredes img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    align-items: center;
+}
+.logoredes a:hover{
+    filter: brightness(120%);
 }
 nav{
     border: 1px solid #04293A;
@@ -33,7 +85,7 @@ nav{
     height: auto;
     font-size: larger;
     font-weight: 600;
-    text-shadow: 3px 2px 1px #7d4100;
+    text-shadow: 4px 2px 3px #d16400;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -41,16 +93,9 @@ nav{
     position: sticky;
     top: 0;
     background-color: #064663;
-    color: #c4c4ce;
+    color: whitesmoke;
     opacity: 0.9;
 }
-nav a{
-    color: white;
-}
-nav a:hover{
-    color: #ffaf00;
-}
-
 .menu{
     display: inline-flex;
     justify-content: center;
@@ -74,12 +119,23 @@ nav img{
     align-items: center;
 }
 nav img:hover{
-    opacity: 0.8;
-    transform: rotate(10deg);
+    filter: brightness(110%);
+    transform: rotate(5deg);
+}
+nav a{
+    color: white;
+}
+nav a:hover{
+    color: #ffc100;
+}
+#zonatop{
+    background-image: linear-gradient(180deg, #041C32, #04293A);
+}
+#zonabottom{
+    background-image: linear-gradient(180deg, #04293A, #064663);
 }
 
 footer{
-    background-color: #041C32;
     color:#c4c4ce;
     height: 120px;
     padding: 20px;
@@ -88,20 +144,23 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-footer a{
-    color:#c4c4ce;
-}
-footer ul li{
-    margin-top:8px;
-}
-.redes{
+footer ul{
     display: flex;
     flex-direction: row;
 }
-.redes li{
-    margin-right: 15px;
-}
 
+footer ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+footer a{
+    color:#c4c4ce;
+}
+footer a:hover{
+    color: whitesmoke;
+}
 
 
 
