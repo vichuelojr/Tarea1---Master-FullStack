@@ -12,10 +12,15 @@ al contenedor de la pagina. Comunes a todas las páginas del sitio web  */
     list-style: none;
     font-family: 'Raleway', sans-serif;
 }
-
+/*REGLAS COMUNES EN TODO EL DOCUMENTO*/
 #contenedor {
 
 }
+a{
+    color: whitesmoke;
+
+}
+
 /*ESTILO DEL HEADER*/
 header {
     width: 100%;
