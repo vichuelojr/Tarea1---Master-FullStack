@@ -1,13 +1,9 @@
 /*Doy estilo al section, donde esta el contenido organizado mediante css grid. dos columnas con 4 filas.
 parrafos en article e imagenes en div*/
-section{
-    width: 80%;
+
+.sectionsinaside{
     margin: auto;
-    margin-top: 40px;
-    padding-left: 70px;
-    padding-right: 70px;
-    border-radius: 50px;
-    background-image: linear-gradient(180deg, #255D77, #83A3B1);
+    padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 0.6fr;
@@ -15,10 +11,8 @@ section{
     justify-items: center;
     justify-content: center;
     align-items: center;
-
 }
-section article{
-    width: 100%;
+.sectionsinaside article{
     justify-self: center;
     align-self: center;
     font-size: 22px;
@@ -28,31 +22,31 @@ article p{
     color: whitesmoke;
     line-height: 35px;
 }
-section h2{
+.sectionsinaside h2{
     color: whitesmoke;
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     text-shadow: -2px 2px 1px #ECB365;
-    margin: 10px;
+    margin: 20px;
 }
 p strong{
     color: white;
 }
 /*Divs donde se encuentran imagenes*/
-section div{
+.sectionsinaside div{
     border-radius: 30px;
     width: 450px;
     height: 450px;
     overflow: hidden;
 }
-.imgordenador{
+.sectionsinaside .imgordenador{
     border-radius: 30px;
     width: 500px;
     height: 300px;
     overflow: hidden;
     align-content: center;
 }
-section img{
+.sectionsinaside img{
     width: 100%;
 }
 .largo{

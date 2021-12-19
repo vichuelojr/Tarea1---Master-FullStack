@@ -1,0 +1,96 @@
+/*Piso la section genérica para trabajar una section más pequeña con un aside al lado*/
+section{
+    float: left;
+    width: 65%;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 20px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #255D77, #83A3B1);
+}
+
+/*REGLAS PARA LAS PÁGINAS DE CADA ARTICULO*/
+
+section .articulo{
+    margin: auto;
+    padding: 20px;
+}
+.articulo h2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 38px;
+    text-shadow: -2px 2px 1px #ECB365;
+    margin-bottom: 40px;
+}
+.articulo .imgarticulo{
+    border-radius: 50px;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 850px;
+    height: 450px;
+    overflow: hidden;
+}
+section img{
+    width: 100%;
+}
+.articulo p{
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 30px;
+}
+
+/*REGLAS PARA LA PÁGINA DE BLOG, CUADRICULA CON TODOS LOS ARTICULOS*/
+section .bloggrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+section .bloggrid article{
+    text-align: center;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #44748A, #255D77);
+    padding: 10px;
+}
+section .bloggrid article h2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: -2px 2px 2px #ECB365;
+    margin: 15px;
+}
+section .bloggrid .imgarticulo{
+    border-radius: 30px;
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+}
+section .bloggrid article p{
+    font-size: 18px;
+    color: whitesmoke;
+    margin: 10px;
+}
+section a:hover{
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    filter: brightness(105%);
+}
+/*PERSONALIZO EL ASIDE COMÚN A LA PÁGINA DE BLOG Y A LA DE CADA ARTICULO*/
+
+aside{
+    float: right;
+    position: sticky;
+    top: 80px;
+    border-radius: 50px;
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 60px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #255D77, #83A3B1);
+}
+
+footer{
+    clear: both;
+}

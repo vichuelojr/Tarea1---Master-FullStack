@@ -22,13 +22,13 @@ a{
 }
 
 /*ESTILO DEL HEADER*/
-header {
-    width: 100%;
+header{
     height: 150px;
     background-image: linear-gradient(180deg, #041C32 10%, #04293A);
     color: whitesmoke;
 }
 header h1{
+    display: inline-block;
     position: relative;
     font-size: 80px;
     left: 115px;
@@ -38,11 +38,11 @@ header h1{
 }
 
 .trigo{
-    position: relative;
+    position: absolute;
     width: 90px;
     height: 90px;
     left: 475px;
-    bottom: 75px;
+    top: 20px;
     overflow: hidden;
 }
 
@@ -51,18 +51,20 @@ header h1{
     filter: brightness(115%);
 }
 header h2{
+    display: inline-block;
     font-size: 15px;
     position: relative;
-    bottom: 65px;
-    left: 120px;
+    top: 55px;
+    right: 250px;
 }
 .redes{
-    position: relative;
-    left: 1170px;
-    bottom: 100px;
+    position: absolute;
+    right: 130px;
+    top: 105px;
 }
 .redes ul{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 .redes ul li{
@@ -135,7 +137,16 @@ nav a{
 nav a:hover{
     color: #ffc100;
 }
-
+/*ESTILO DE LA SECTION*/
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #255D77, #638B9E);
+}
 /*ESTILO DEL FOOTER*/
 
 footer{
