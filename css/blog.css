@@ -23,11 +23,11 @@ section .articulo{
     margin-bottom: 40px;
 }
 .articulo .imgarticulo{
-    border-radius: 50px;
+    border-radius: 40px;
     margin: auto;
     padding-bottom: 20px;
     width: 850px;
-    height: 450px;
+    height: 430px;
     overflow: hidden;
 }
 .articulo .imgarticulonft{
@@ -73,7 +73,7 @@ a:hover{
     color: #ffc100;
 }
 
-/*REGLAS PARA LA PÁGINA DE BLOG, CUADRICULA CON TODOS LOS ARTICULOS*/
+/*REGLAS PARA LA PÁGINA DE BLOG, CUADRICULA CON TODOS LOS ARTÍCULOS*/
 section .bloggrid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -101,7 +101,7 @@ section .bloggrid .imgarticulo{
     border-radius: 30px;
     margin: auto;
     width: 450px;
-    height: 250px;
+    height: 230px;
     overflow: hidden;
 }
 section .bloggrid article p{
