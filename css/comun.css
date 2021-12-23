@@ -104,6 +104,7 @@ nav{
     top: 0;
     background-color: #064663;
     opacity: 0.9;
+
 }
 nav ul{
     display: flex;
@@ -117,22 +118,27 @@ nav ul li{
 }
 .elementolibtc{
     margin: 0;
+
 }
 .logobtc{
     width: 55px;
     height: 55px;
     overflow: hidden;
     margin: 5px;
+
     }
 nav img{
     width: 100%;
+    transition: all 0.5s;
 }
 nav img:hover{
-    filter: brightness(115%);
-    transform: rotate(5deg);
+    filter: brightness(118%);
+    transform: rotate(10deg);
+
 }
 nav a{
     color: white;
+    transition: all 0.2s;
 }
 nav a:hover{
     color: #ffc100;

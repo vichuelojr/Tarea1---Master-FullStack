@@ -89,6 +89,7 @@ section .bloggrid article{
     height: 450px;
     justify-self: stretch;
 
+
 }
 section .bloggrid article h2{
     color: whitesmoke;
@@ -103,16 +104,19 @@ section .bloggrid .imgarticulo{
     width: 450px;
     height: 230px;
     overflow: hidden;
+
 }
 section .bloggrid article p{
     font-size: 18px;
     color: whitesmoke;
     margin: 10px;
 }
+
 section .bloggrid a:hover{
     border: 1px solid #83A3B1;
     border-radius: 50px;
-    filter: brightness(105%);
+    filter: brightness(110%);
+    transition: all 0.2s ease;
 }
 /*PERSONALIZO EL ASIDE COMÚN A LA PÁGINA DE BLOG Y A LA DE CADA ARTICULO*/
 
