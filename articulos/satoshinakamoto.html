@@ -9,6 +9,7 @@
     <!--Linkeo los archivos CSS que dan estilo a la página, primero el común y después el específico por si se pisan-->
     <link rel="stylesheet" href="/css/comun.css">
     <link rel="stylesheet" href="/css/blog.css">
+    <script src="/js/jscoinbarn.js"></script>
 
 </head>
 <body>
@@ -108,21 +109,52 @@
         <!--ASIDE suscríbete al blog-->
         <aside>
             <article>
-                SUSCRIBETE AL BLOG
+                <h3>SUSCRÍBETE AL BLOG</h3>
+                <div class="formaside">
+                    <form name="formaside" action="contacto.html" method="get">
+                        <ul>
+                            <li><label>Para no perderte nada introduce aquí tu E-mail</label></li>
+                            <li><label> <input class="email" name="email" type="email">
+                            </label></li>
+                            <li><input type="button" name="boton" value="Suscribirse" onclick="validarAside()" class="boton"></li>
+                            <li> <span id="msgemail"></span> </li>
+                        </ul>
+                    </form>
+                </div>
             </article>
+
             <article>
-                Lo más popular
-                <div>
-                    articulo1
-                </div>
-                <div>
-                    articulo2
-                </div>
-                <div>
-                    articulo3
+
+                <h3>ARTÍCULOS RELACIONADOS</h3>
+
+                <a href="/coinbarn/articulos/bitcoin.html">
+                    <div class="artaside">
+                        <h2>¿Qué es Bitcoin?</h2>
+                        <div class="imgaside"><img src="/recursos/bitcoin2.jpg" alt="¿Qué es Bitcoin?"
+                                                   title="Bitcoin"></div>
+                    </div>
+                </a>
+
+                <a href="/coinbarn/articulos/blockchain.html">
+                    <div class="artaside">
+                        <h2>¿Qué es la Blockchain?</h2>
+                        <div class="imgaside"><img src="/recursos/blockchain.jpg" alt="Tecnología Blockchain"
+                                                   title="Blockchain"></div>
+                    </div>
+                </a>
+
+
+                <div class="artaside">
+                    <a href="/coinbarn/articulos/defi.html">
+                        <h2>¿Qué son las DeFi?</h2>
+                        <div class="imgaside"><img src="/recursos/defi.jpg" alt="Finanzas Descentralizadas"
+                                                   title="Finanzas Descentralizadas"></div>
+                    </a>
                 </div>
 
+
             </article>
+
         </aside>
 
 

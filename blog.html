@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,6 +9,13 @@
     <!--Linkeo los archivos CSS que dan estilo a la página, primero el común y después el específico por si se pisan-->
     <link rel="stylesheet" href="css/comun.css">
     <link rel="stylesheet" href="css/blog.css">
+    <script src="js/jscoinbarn.js"></script>
+    <script>
+        window.onload = function(){
+
+        }
+
+    </script>
 
 </head>
 <body>
@@ -149,9 +156,14 @@
                             coste energético</strong> de la computación utilizada para su funcionamiento. <strong>Bitcoin</strong>
                             representa el <em>0.59%</em> de todo el consumo energético mundial.
                             ¿Qué alternativas tienen las <strong>criptomonedas</strong> para que sean
-                            más <strong>eficientes energéticamente?</strong>
+                            más <strong>eficientes energéticamente?</strong></p>
                     </article>
                 </a>
+
+                <article class="sugerencia">
+                    <p>¿Tienes alguna sugerencia o quieres que escriba acerca de un tema en particular?</p>
+                    <h2>Házmelo saber <a href="contacto.html">AQUÍ</a></h2>
+                </article>
 
             </div>
 
@@ -160,20 +172,50 @@
         <aside>
             <article>
                 <h3>SUSCRÍBETE AL BLOG</h3>
+                <div class="formaside">
+                    <form name="formaside" action="contacto.html" method="get">
+                        <ul>
+                            <li><label>Para no perderte nada introduce aquí tu E-mail</label></li>
+                            <li><label> <input class="email" name="email" type="email">
+                            </label></li>
+                            <li><input type="button" name="boton" value="Suscribirse" onclick="validarAside()" class="boton"></li>
+                            <li> <span id="msgemail"></span> </li>
+                        </ul>
+                    </form>
+                </div>
             </article>
+
             <article>
+
                 <h3>LO MÁS POPULAR</h3>
-                <div>
-                    articulo1
-                </div>
-                <div>
-                    articulo2
-                </div>
-                <div>
-                    articulo3
+
+                <a href="articulos/nft.html">
+                    <div class="artaside">
+                        <h2>¿Qué es un NFT?</h2>
+                        <div class="imgaside"><img src="/recursos/nft3.jpg" alt="¿Qué es un nft?" title="NFT"></div>
+                    </div>
+                </a>
+
+                <a href="articulos/satoshinakamoto.html">
+                    <div class="artaside">
+                        <h2>¿Quién es Satoshi Nakamoto?</h2>
+                        <div class="imgaside"><img src="/recursos/satoshi.jpg" alt="Satoshi Nakamoto"
+                                                   title="Satoshi Nakamoto"></div>
+                    </div>
+                </a>
+
+
+                <div class="artaside">
+                    <a href="articulos/bitcoin.html">
+                        <h2>¿Qué es Bitcoin?</h2>
+                        <div class="imgaside"><img src="/recursos/bitcoin2.jpg" alt="¿Qué es Bitcoin?"
+                                                   title="Bitcoin"></div>
+                    </a>
                 </div>
 
+
             </article>
+
         </aside>
 
 

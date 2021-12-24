@@ -16,9 +16,11 @@ al contenedor de la pagina. Comunes a todas las páginas del sitio web  */
 #contenedor {
 
 }
+img {
+    width: 100%;
+}
 a{
     color: whitesmoke;
-
 }
 
 /*ESTILO DEL HEADER*/
@@ -76,9 +78,7 @@ header h2{
     height: 35px;
     overflow: hidden;
 }
-.logoredes img{
-    width: 100%;
-}
+
 .logoredes a:hover{
     filter: brightness(120%);
     margin: 1px;
@@ -128,7 +128,6 @@ nav ul li{
 
     }
 nav img{
-    width: 100%;
     transition: all 0.5s;
 }
 nav img:hover{
@@ -142,6 +141,7 @@ nav a{
 }
 nav a:hover{
     color: #ffc100;
+    transition: all 0.4s ease;
 }
 /*ESTILO DE LA SECTION*/
 section{
@@ -153,6 +153,94 @@ section{
     border-radius: 50px;
     background-image: linear-gradient(180deg, #255D77, #638B9E);
 }
+
+
+/*ESTILO DEL ASIDE, PARA LAS PÁGINAS QUE LOS TENGAN*/
+aside{
+    float: right;
+    position: sticky;
+    top: 80px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 80px;
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 60px;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(180deg, #064663, #255D77);
+    text-align: center ;
+    align-items: stretch;
+    justify-content: stretch;
+    color: whitesmoke;
+    height: 1100px;
+}
+aside h3{
+    font-size: 20px;
+    text-shadow: -2px -1px 4px #ffc100;
+    margin: 20px;
+}
+aside article{
+    margin-bottom: 5px;
+}
+aside article .formaside{
+    background-image: linear-gradient(180deg, #255D77, #44748A);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+}
+aside ul li{
+    margin: 15px;
+}
+aside ul li .email{
+    border-radius: 5px;
+    height: 20px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+}
+aside ul li .boton{
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+#msgemail{
+    font-weight: 600;
+}
+
+aside article .artaside{
+    background-image: linear-gradient(180deg, #255D77, #44748A);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+aside h2{
+    margin: 8px;
+}
+
+.imgaside{
+    border-radius: 20px;
+    width: 275px;
+    height: 150px;
+    overflow: hidden;
+    margin: auto;
+}
+
+aside a:hover{
+    color: #ffc100;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
 /*ESTILO DEL FOOTER*/
 
 footer{
@@ -177,6 +265,7 @@ footer a{
 }
 footer a:hover{
     color: whitesmoke;
+
 }
 
 
