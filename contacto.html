@@ -9,6 +9,7 @@
     <!--Linkeo los archivos CSS que dan estilo a la página, primero el común y después el específico por si se pisan-->
     <link rel="stylesheet" href="css/comun.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/jscoinbarn.js"></script>
 </head>
 <body>
 <!--Creo un div que me contenga toda la página-->
@@ -16,21 +17,36 @@
     <!--El header es común para todas las páginas -->
 
     <header>
-        <h1>CoinBarn</h1> <div class="trigo"> <img src="recursos/trigo.png" alt="coinbarn" title="trigo"> </div>
+        <h1>CoinBarn</h1>
+        <div class="trigo"><img src="recursos/trigo.png" alt="coinbarn" title="trigo"></div>
         <h2>Blog acerca de criptomonedas y tecnología Blockchain</h2>
         <!-- Lista de redes sociales con los iconos-->
         <div class="redes">
             <ul>
-                <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/twitter.png" alt="twitter coinbarn"
-                                                            title="logo twitter"></a></div></li>
-                <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/facebook.png" alt="facebook coinbarn"
-                                                            title="logo facebook"></a></div></li>
-                <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/linkedin.png" alt="linkedin coinbarn"
-                                                            title="logo linkedin"></a></div></li>
-                <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/youtube.png" alt="youtube coinbarn"
-                                                            title="logo youtube"></a></div></li>
-                <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/medium.png" alt="medium coinbarn"
-                                                            title="logo medium"></a></div></li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/twitter.png"
+                                                           alt="twitter coinbarn"
+                                                           title="logo twitter"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/facebook.png"
+                                                           alt="facebook coinbarn"
+                                                           title="logo facebook"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/linkedin.png"
+                                                           alt="linkedin coinbarn"
+                                                           title="logo linkedin"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/youtube.png"
+                                                           alt="youtube coinbarn"
+                                                           title="logo youtube"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/medium.png" alt="medium coinbarn"
+                                                           title="logo medium"></a></div>
+                </li>
             </ul>
         </div>
     </header>
@@ -44,8 +60,10 @@
                 <li><a href="index.html">CoinBarn</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
-                <li class="elementolibtc"><div class="logobtc"><a href="https://bitcoin.org/es/" target="_blank">
-                    <img src="recursos/logobtc1.png" alt="Bitcoin" title="Logo Bitcoin"></a></div></li>
+                <li class="elementolibtc">
+                    <div class="logobtc"><a href="https://bitcoin.org/es/" target="_blank">
+                        <img src="recursos/logobtc1.png" alt="Bitcoin" title="Logo Bitcoin"></a></div>
+                </li>
                 <li><a href="https://coinmarketcap.com/watchlist/60687f2c906418098e7cc626"
                        target="_blank">Watchlist</a></li>
                 <li><a href="sobremi.html">Sobre Mi</a></li>
@@ -55,7 +73,48 @@
 
         <!--SECTION-->
         <section>
-            <div>FORMULARIO DE CONTACTO</div>
+            <div class="contacto">
+                <form name="formcontacto" method="get" action="contacto.html">
+                    <h2>CONTACTO</h2>
+                    <div class="form1">
+                        <ul>
+                            <li><label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre"></li>
+                            <span id="msgnombre" class="msg"></span>
+                            <li><label for="email">E-mail: </label><input id="email" name="email" type="email"></li>
+                            <span id="msgemailform" class="msg"></span>
+                            <li><label for="telefono">Teléfono: </label><input name="telefono" id="telefono" type="tel"></li>
+                            <span id="msgtelefono" class="msg"></span>
+                            <li><label for="direccion">Dirección: </label><input id="direccion" name="direccion" type="text"></li>
+                            <li><input class="boton" type="button" value="Enviar" onclick="validarFormulario()"></li>
+                            <span id="msgenviar" class="msg"></span>
+                        </ul>
+                    </div>
+                    <div class="form2">
+                        <ul>
+                            <li><label for="consulta">Tipo de consulta: </label>
+                                <select id="consulta" name="consulta">
+                                    <option>...</option>
+                                    <option>Sugerencia</option>
+                                    <option>Queja</option>
+                                    <option>Consulta</option>
+                                </select>
+                            </li>
+                            <li><label>Sexo:</label>
+                                <input class="sexo" type="radio" name="sexo" value="0"><span
+                                        class="textosexo">Hombre</span>
+                                <input class="sexo" type="radio" name="sexo" value="1"><span
+                                        class="textosexo">Mujer</span>
+                                <input class="sexo" type="radio" name="sexo" value="2"><span class="textosexo">Otro</span>
+                            </li>
+                            <li><label for="comentarios">Comentarios: </label><textarea id="comentarios"></textarea></li>
+                            <li><label for="checkbox" class="datos">Acepto que Coinbarn &#169; trate mis datos para uso propio</label><input id="checkbox"
+                                                                                                    type="checkbox"
+                                                                                                    name="datos"><span id="msgcheckbox" class="msg"></span></li>
+                            <span id="msgcheckbox" class="msg"></span>
+                        </ul>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!--El Footer es común a todas las páginas-->

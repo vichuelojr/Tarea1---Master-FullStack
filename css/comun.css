@@ -153,9 +153,63 @@ section{
     border-radius: 50px;
     background-image: linear-gradient(180deg, #255D77, #638B9E);
 }
+/*ESTILO PARA EL SLIDER EN LA SECTION DEL INDEX */
+.sectionindex{
+    float: left;
+    width: 62%;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #255D77, #83A3B1);
+}
+.slider{
+    margin: auto;
+    border-radius: 50px;
+    width: 900px;
+    height: 540px;
+    overflow: hidden;
+    position: relative; /*para poder fijar bien el titulo del slider*/
 
+}
+.sectionindex .slider:hover{
+    filter: brightness(115%);
+}
+.tituloslider{
+    background-image:linear-gradient(45deg, #064663, #83A3B1, #064663);
+    opacity: 0.9;
+    width: 900px;
+    height: 60px;
+    position: absolute;
+    top: 420px;
+    color: whitesmoke;
+    text-shadow: 4px 2px 3px black;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+}
+.botonsliderpadre{
+    position: absolute;
+    left: 370px;
+    top: 15px;
+    display: flex;
+}
+.botonslider{
+    display: inline-block;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #04293A;
+    border-radius: 20px;
+}
 
 /*ESTILO DEL ASIDE, PARA LAS PÁGINAS QUE LOS TENGAN*/
+.asideindex{
+    height: 560px;
+    position: static;
+}
 aside{
     float: right;
     position: sticky;
@@ -244,8 +298,9 @@ aside a:hover{
 /*ESTILO DEL FOOTER*/
 
 footer{
+    clear: both;
     color:#c4c4ce;
-    height: 120px;
+    height: 100px;
     padding: 20px;
     font-size: 80%;
     display: flex;

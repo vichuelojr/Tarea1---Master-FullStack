@@ -8,7 +8,12 @@
     <title>CoinBarn</title>
     <!--Linkeo los archivos CSS que dan estilo a la página, primero el común y después el específico por si se pisan-->
     <link rel="stylesheet" href="css/comun.css">
-    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jscoinbarn.js"></script>
+    <script>
+        window.onload = function () {
+            slider();
+        }
+    </script>
 </head>
 <body>
 <!--Creo un div que me contenga toda la página-->
@@ -16,27 +21,42 @@
     <!--El header es común para todas las páginas -->
 
     <header>
-        <h1>CoinBarn</h1> <div class="trigo"> <img src="recursos/trigo.png" alt="coinbarn" title="trigo"> </div>
+        <h1>CoinBarn</h1>
+        <div class="trigo"><img src="recursos/trigo.png" alt="coinbarn" title="trigo"></div>
         <h2>Blog acerca de criptomonedas y tecnología Blockchain</h2>
         <!-- Lista de redes sociales con los iconos-->
         <div class="redes">
-        <ul>
-            <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/twitter.png" alt="twitter coinbarn"
-                                                        title="logo twitter"></a></div></li>
-            <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/facebook.png" alt="facebook coinbarn"
-                                      title="logo facebook"></a></div></li>
-            <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/linkedin.png" alt="linkedin coinbarn"
-                                                        title="logo linkedin"></a></div></li>
-            <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/youtube.png" alt="youtube coinbarn"
-                                      title="logo youtube"></a></div></li>
-            <li><div class="logoredes"> <a href=""><img src="recursos/redessociales/medium.png" alt="medium coinbarn"
-                                      title="logo medium"></a></div></li>
-        </ul>
+            <ul>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/twitter.png"
+                                                           alt="twitter coinbarn"
+                                                           title="logo twitter"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/facebook.png"
+                                                           alt="facebook coinbarn"
+                                                           title="logo facebook"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/linkedin.png"
+                                                           alt="linkedin coinbarn"
+                                                           title="logo linkedin"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/youtube.png"
+                                                           alt="youtube coinbarn"
+                                                           title="logo youtube"></a></div>
+                </li>
+                <li>
+                    <div class="logoredes"><a href=""><img src="recursos/redessociales/medium.png" alt="medium coinbarn"
+                                                           title="logo medium"></a></div>
+                </li>
+            </ul>
         </div>
     </header>
 
 
-<!--Me creo este div para la transición de color entre el header y el resto de la página-->
+    <!--Me creo este div para la transición de color entre el header y el resto de la página-->
     <div class="zonabottom">
         <!--El Nav es común a todas las páginas para navegar entre ellas-->
         <nav>
@@ -44,33 +64,75 @@
                 <li><a href="index.html">CoinBarn</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="glosario.html">Glosario</a></li>
-                <li class="elementolibtc"><div class="logobtc"><a href="https://bitcoin.org/es/" target="_blank">
-                    <img src="recursos/logobtc1.png" alt="Bitcoin" title="Logo Bitcoin"></a></div></li>
+                <li class="elementolibtc">
+                    <div class="logobtc"><a href="https://bitcoin.org/es/" target="_blank">
+                        <img src="recursos/logobtc1.png" alt="Bitcoin" title="Logo Bitcoin"></a></div>
+                </li>
                 <li><a href="https://coinmarketcap.com/watchlist/60687f2c906418098e7cc626"
-                                    target="_blank">Watchlist</a></li>
+                       target="_blank">Watchlist</a></li>
                 <li><a href="sobremi.html">Sobre Mi</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
         <!--SECTION-->
-        <section>
-
+        <section class="sectionindex">
+            <div class="slider">
+                <div class="botonsliderpadre">
+                    <div class="botonslider" onclick="nuevocontador(0)"></div>
+                    <div class="botonslider" onclick="nuevocontador(1)"></div>
+                    <div class="botonslider" onclick="nuevocontador(2)"></div>
+                    <div class="botonslider" onclick="nuevocontador(3)"></div>
+                    <div class="botonslider" onclick="nuevocontador(4)"></div>
+                </div>
+                <a href="articulos/bitcoin.html" id="sliderhref">
+                    <img id="sliderimg" src="recursos/bitcoin2.jpg" alt="Coinbarn slider" title="Coinbarn slider">
+                    <div class="tituloslider" id="slidertitulo"></div>
+            </div>
+            </a>
         </section>
+        <aside class="asideindex">
+            <article>
+                <h3>SUSCRÍBETE AL BLOG</h3>
+                <div class="formaside">
+                    <form name="formaside" action="contacto.html" method="get">
+                        <ul>
+                            <li><label>Para no perderte nada introduce aquí tu E-mail</label></li>
+                            <li><label> <input class="email" name="email" type="email">
+                            </label></li>
+                            <li><input type="button" name="boton" value="Suscribirse" onclick="validarAside()"
+                                       class="boton"></li>
+                            <li><span id="msgemail"></span></li>
+                        </ul>
+                    </form>
+                </div>
+            </article>
 
+            <article>
 
-    <!--El Footer es común a todas las páginas-->
-    <footer>
-        <ul>
-            <li>&#169; CoinBarn. Todos los derechos reservados</li>
-            <li><a href="">Términos de uso</a></li>
-            <li><a href="">Política de privacidad</a></li>
-            <li><a href="">Política de Cookies</a></li>
-        </ul>
-    </footer>
+                <h3>LO MÁS POPULAR</h3>
+
+                <a href="articulos/satoshinakamoto.html">
+                    <div class="artaside">
+                        <h2>¿Quién es Satoshi Nakamoto?</h2>
+                        <div class="imgaside"><img src="/recursos/satoshi.jpg" alt="Satoshi Nakamoto"
+                                                   title="Satoshi Nakamoto"></div>
+                    </div>
+                </a>
+
+            </article>
+
+        </aside>
+        <!--El Footer es común a todas las páginas-->
+        <footer>
+            <ul>
+                <li>&#169; CoinBarn. Todos los derechos reservados</li>
+                <li><a href="">Términos de uso</a></li>
+                <li><a href="">Política de privacidad</a></li>
+                <li><a href="">Política de Cookies</a></li>
+            </ul>
+        </footer>
     </div>
 </div>
-
-
 </body>
 </html>

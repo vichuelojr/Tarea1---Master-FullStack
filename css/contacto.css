@@ -1,0 +1,104 @@
+.contacto{
+    padding: 30px;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+form{
+
+}
+form h2{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: -2px 2px 1px #ECB365;
+    margin-bottom: 15px;
+}
+
+.form1{
+    display: inline-block;
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    text-align: start;
+    margin-right: 20px;
+}
+.form2{
+    display: inline-block;
+    float: right;
+    width: 500px;
+    height: 450px;
+    padding: 10px;
+    text-align: start;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+input{
+    border-radius: 5px;
+    height: 20px;
+    padding: 5px;
+    width: 200px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+select{
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#telefono{
+    width: 150px;
+}
+#direccion{
+    width: 300px;
+}
+.sexo{
+    height: 15px;
+    padding: 5px;
+    width: 20px;
+    margin: 5px;
+}
+.textosexo{
+    font-size: 20px;
+    margin-right: 30px;
+}
+.datos{
+    font-size: 18px;
+}
+#checkbox{
+    position: relative;
+    left: 450px;
+    bottom: 28px;
+    width: 40px;
+
+}
+.boton{
+    margin: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+textarea{
+    padding: 10px;
+    width: 450px;
+    height: 100px;
+    resize: none;
+    margin: 5px;
+    font-size: 15px;
+}
+.msg{
+    font-size: 15px;
+    font-weight: 600;
+}
