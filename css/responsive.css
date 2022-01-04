@@ -1,16 +1,756 @@
 /*REGLAS PARA RESPONSIVE. TABLET Y MOVIL*/
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    section, .sectionindex, .sectionsinaside, {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    /*HEADER*/
+    header {
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        left: 40px;
+    }
+
+    .trigo {
+        width: 65px;
+        height: 65px;
+        left: 320px;
+        top: 20px;
+    }
+
+    header h2 {
+        font-size: 10px;
+        top: 45px;
+        left: -240px;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    /*NAV*/
+    nav {
+        width: 95%;
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+
+    /*SECTION*/
+    section, .sectionindex, .sectionsinaside {
+        margin: 10px 0 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .sectionindex {
+        border-radius: 0;
+        padding-top: 10px;
+        height: 440px;
+        float: none;
         width: 100%;
     }
+
+    /*PARA LA PAGINA DE INDEX*/
+    .slider {
+        border-radius: 10px;
+        margin: auto;
+        padding-bottom: 10px;
+        width: 700px;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .tituloslider {
+        width: 100%;
+        height: 45px;
+        position: absolute;
+        top: 340px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .botonsliderpadre {
+        position: absolute;
+        left: 260px;
+        display: flex;
+    }
+
+    /*SECTION PARA LA PÁGINA DE BLOG, con la rejilla*/
+    section .bloggrid {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    section .bloggrid article {
+        text-align: center;
+        border-radius: 50px;
+        padding: 5px;
+        height: 410px;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    section .bloggrid article h2 {
+        font-size: 25px;
+    }
+
+    section .bloggrid .imgarticulo {
+        border-radius: 30px;
+        margin: auto;
+        width: 450px;
+        height: 230px;
+        overflow: hidden;
+
+    }
+
+    section .bloggrid article p {
+        font-size: 15px;
+        color: whitesmoke;
+        margin: 10px;
+    }
+
+    section .bloggrid .sugerencia {
+        text-align: center;
+        font-weight: 600;
+        height: 100px;
+    }
+    /*SECTION PARA CADA PÁGINA DEL BLOG*/
+    section .articulo{
+        padding: 10px;
+    }
+    .articulo h2{
+        margin-bottom: 20px;
+    }
+    .articulo .imgarticulo{
+        padding-bottom: 20px;
+        width: 680px;
+        height: 350px;
+    }
+    .articulo .imgarticulo1{
+        padding-bottom: 20px;
+        width: 680px;
+        height: 350px;
+    }
+    .articulo .imgarticulonft{
+        display: flex;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .descripcionimg{
+        font-weight: lighter;
+        text-align: center;
+    }
+    .articulo .nft{
+        margin: 10px;
+        width: 520px;
+    }
+    .articulo .nft1{
+        float: left;
+        width: 600px;
+    }
+    .articulo p{
+        font-size: 20px;
+    }
+    section h3{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+
+    /*PARA EL GLOSARIO*/
+    .glosarioflex {
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: start;
+        align-content: start;
+    }
+
+    .glosarioflex .definiciones {
+        margin-left: 5px;
+        font-size: 16px;
+    }
+
+    .glosarioflex .letras {
+        position: sticky;
+        top: 70px;
+        width: 500px;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-top: 0;
+        padding-bottom: 15px;
+        letter-spacing: 10px;
+    }
+
+    .letras a {
+        font-size: 16px;
+    }
+
+    .glosarioflex dt {
+        display: block;
+        font-weight: 600;
+        color: whitesmoke;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .glosarioflex dd {
+        color: whitesmoke;
+        font-size: 15px;
+    }
+
+    section h3 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /*SOBRE MI*/
+
+    .sectionsinaside{
+        margin: auto;
+        padding: 0;
+    }
+    .sectionsinaside article{
+        font-size: 15px;
+    }
+    article p{
+        margin: 0 0 0 10px;
+        line-height: 25px;
+    }
+    .sectionsinaside h2{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 28px;
+        text-shadow: -2px 2px 1px #ECB365;
+        margin: 10px;
+    }
+
+    /*Divs donde se encuentran imagenes*/
+    .sectionsinaside div{
+        border-radius: 30px;
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+    }
+    .sectionsinaside .imgordenador{
+        border-radius: 30px;
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+        align-content: center;
+    }
+
+
+    .largo p{
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    /*CONTACTO*/
+    .contacto{
+        padding: 10px;
+        font-size: 15px;
+        text-align: start;
+        display: flex;
+        justify-content: start;
+    }
+    form h2{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .form1{
+        width: 210px;
+        height: 380px;
+        padding: 5px;
+    }
+    .form2{
+        width: 470px;
+    }
+    label{
+        margin-top: 10px;
+    }
+
+    #direccion{
+        width: 200px;
+    }
+
+    textarea{
+        width: 400px;
+    }
+
+    /*ASIDE*/
+    .asideindex {
+        padding: 0;
+        margin-top: 10px;
+        float: none;
+        width: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        float: none;
+        position: static;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 20px 0 10px;
+        background-image: linear-gradient(180deg, #064663, #255D77);
+        text-align: center;
+        align-items: stretch;
+        justify-content: stretch;
+        height: auto;
+    }
+
+    .formaside {
+        width: 80%;
+        margin: auto;
+    }
+
+    .artaside {
+        margin: auto;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
 
 }
 
 /*MOVIL*/
 @media screen and (max-width: 767px) {
-    section {
-        width: 100%;
+    /*HEADER*/
+    header {
+        height: 100px;
     }
+
+    header h1 {
+        font-size: 40px;
+        left: 20px;
+    }
+
+    .trigo {
+        width: 55px;
+        height: 55px;
+        left: 220px;
+        top: 10px;
+    }
+
+    header h2 {
+        font-size: 10px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    /*NAV*/
+    nav {
+        border: 1px solid #04293A;
+        border-radius: 10px;
+        width: 98%;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 18px;
+    }
+
+    .logobtc {
+        display: none;
+    }
+
+    /*SECTION*/
+    section, .sectionindex, .sectionsinaside {
+        padding: 0;
+        margin: 10px 0 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .sectionindex {
+        height: 215px;
+        padding: 15px 0 0;
+        float: none;
+    }
+
+    /*PARA LA PAGINA DE INDEX*/
+    .slider {
+        border-radius: 10px;
+        margin: auto;
+        width: 330px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .tituloslider {
+        width: 100%;
+        height: 40px;
+        top: 140px;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .botonsliderpadre {
+        left: 105px;
+    }
+
+    .botonslider {
+        width: 12px;
+        height: 12px;
+    }
+
+    /*SECTION PARA LA PÁGINA DE BLOG, con la rejilla*/
+    section .bloggrid {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    section .bloggrid article {
+        text-align: center;
+        border-radius: 50px;
+        padding: 5px;
+        height: 360px;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    section .bloggrid article h2 {
+        font-size: 20px;
+    }
+
+    section .bloggrid .imgarticulo {
+        border-radius: 30px;
+        margin: auto;
+        width: 300px;
+        height: 155px;
+        overflow: hidden;
+    }
+
+    section .bloggrid article p {
+        font-size: 13px;
+        color: whitesmoke;
+        margin: 10px;
+    }
+
+    section .bloggrid .sugerencia {
+        text-align: center;
+        font-weight: 600;
+        height: 100px;
+    }
+
+    /*SECTION PARA CADA PÁGINA DE BLOG*/
+    section .articulo{
+        padding: 5px;
+    }
+    .articulo h2{
+        margin-bottom: 15px;
+    }
+    .articulo .imgarticulo{
+        padding-bottom: 20px;
+        width: 300px;
+        height: 130px;
+    }
+    .articulo .imgarticulo1{
+        padding-bottom: 20px;
+        width: 300px;
+        height: 130px;
+    }
+    .articulo .imgarticulonft{
+        display: flex;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .descripcionimg{
+        font-weight: lighter;
+        text-align: center;
+    }
+    .articulo .nft{
+        margin: 10px;
+        width: 300px;
+    }
+    .articulo .nft1{
+        float: left;
+        width: 300px;
+    }
+    .articulo p{
+        font-size: 15px;
+    }
+    section h3{
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    /*PARA EL GLOSARIO*/
+    .glosarioflex {
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: start;
+        align-content: start;
+    }
+
+    .glosarioflex .definiciones {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .glosarioflex .definiciones h3 {
+        font-size: 20px;
+    }
+
+    .glosarioflex .letras {
+        position: sticky;
+        top: 60px;
+        width: 600px;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-top: 0;
+        padding-bottom: 15px;
+        letter-spacing: 5px;
+    }
+
+    .letras a {
+        font-size: 14px;
+    }
+
+    .glosarioflex dt {
+        display: block;
+        font-weight: 600;
+        color: whitesmoke;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .glosarioflex dd {
+        color: whitesmoke;
+        font-size: 15px;
+    }
+
+    /*SOBRE MI*/
+
+    .sectionsinaside{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+    }
+    .sectionsinaside article{
+        font-size: 15px;
+    }
+    article p{
+        margin: 0 0 0 10px;
+        line-height: 18px;
+    }
+    .sectionsinaside h2{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    /*Divs donde se encuentran imagenes*/
+    .sectionsinaside div{
+        border-radius: 30px;
+        width: 320px;
+        height: 330px;
+        overflow: hidden;
+    }
+    .sectionsinaside .imgordenador{
+        border-radius: 30px;
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+        align-content: center;
+    }
+
+
+    .largo p{
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    /*CONTACTO*/
+
+    .contacto{
+        padding-top;: 10px;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    form h2{
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .form1{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+    }
+    .contacto .boton{
+        position: relative;
+        top: 500px;
+
+    }
+    .form2{
+        width: 100%;
+        height: 500px;
+        padding: 0;
+    }
+    label{
+        margin-top: 10px;
+    }
+
+    #direccion{
+        width: 200px;
+    }
+    .sexo{
+        height: 15px;
+        padding: 0;
+        width: 18px;
+        margin: 2px;
+    }
+    .textosexo{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    textarea{
+        width: 300px;
+    }
+    #checkbox{
+        position: relative;
+        top: 5px;
+        left: -5px;
+        width: 30px;
+    }
+
+
+    /*ASIDE*/
+    .asideindex {
+        padding: 0;
+        margin-top: 10px;
+        margin-right: 0;
+        float: none;
+        width: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside h3 {
+        font-size: 20px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    .formaside {
+        border-radius: 20px;
+        padding: 0;
+        font-size: 15px;
+        width: 80%;
+        margin: auto;
+    }
+
+    aside {
+        padding: 0;
+        float: none;
+        position: static;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: stretch;
+        justify-content: stretch;
+        height: auto;
+    }
+
+    .artaside {
+        margin: auto;
+        border-radius: 20px;
+        margin-bottom: 0;
+        padding-top: 0;
+        width: 90%;
+    }
+    .imgaside{
+        width: 250px;
+        height: 130px;
+    }
+    .artaside h2 {
+        font-size: 20px;
+    }
+
+    /*  FOOTER PARA MOVIL*/
+    footer {
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer ul {
+        display: block;
+    }
+
+    footer ul li {
+        margin: 5px;
+    }
+
 }
