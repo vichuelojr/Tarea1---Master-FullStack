@@ -1,0 +1,16 @@
+/*REGLAS PARA RESPONSIVE. TABLET Y MOVIL*/
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section, .sectionindex, .sectionsinaside, {
+        width: 100%;
+    }
+
+}
+
+/*MOVIL*/
+@media screen and (max-width: 767px) {
+    section {
+        width: 100%;
+    }
+}
